@@ -1,6 +1,6 @@
 const ballClock = n => {
   if (n < 27 || n > 127) {
-    throw new error("Number must be between 27 & 127");
+    throw "Number must be between 27 & 127";
   }
   let match = 0;
   let count = 0;
@@ -49,8 +49,6 @@ const ballClock = n => {
       }
     }
   }
-  return (
-    "Days: " + count / 2 + "\n" + "Balls: " + n 
-  );
+  return "Days: " + count / 2 + "\n" + "Balls: " + n;
 };
-console.log(ballClock(30));
+console.log(ballClock(45));
